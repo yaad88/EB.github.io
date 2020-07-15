@@ -80,6 +80,9 @@
 
    height: 90%;
    z-index:10000;
+   -webkit-filter: drop-shadow(1px 1px 0 black) drop-shadow(-1px -1px 0 white);
+   filter:drop-shadow(1px 1px 0 black) drop-shadow(-1px -1px 0 white);	 
+	 
  }
  @keyframes appearing {
    from {
