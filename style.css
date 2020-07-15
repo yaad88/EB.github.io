@@ -1,0 +1,300 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: 'Do Hyeon', sans-serif;
+
+}
+
+body {
+  background-image: url('images/back.jpg');
+
+}
+.banner{
+
+  position: relative;
+  width: 100%;
+  min-height: 95vh;
+  padding: 0 100px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  z-index: 1;
+}
+.header{
+  height:5vh;
+}
+
+/** angle kora banner**/
+.banner:before{
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 400px;
+  height: 100%;
+  background: #37d72f;
+  transform-origin: top;
+  transform: skewX(-25deg);
+
+}
+
+.banner video{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+  opacity: 0.15;
+}
+.banner .textbox{
+  position: relative;
+  max-width: 600px;
+  z-index: 2;
+
+}
+.banner .hero{
+  position: relative;
+  height:95vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:50%;
+  z-index: 2;
+}
+.banner .hero img{
+  position: absolute;
+  bottom:0;
+  
+  height: 90%;
+  z-index:10000;
+}
+@keyframes appearing {
+  from {
+    opacity: 1;
+    transform: scale(0);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.appearing {
+  animation-timing-function: ease-in-out;
+  animation-name: appearing;
+  animation-duration: 3s;
+}
+
+
+
+
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .button-image:before {
+    content: "";
+    width: 131px;
+    height: 26px;
+    display: inline-block;
+    margin-right: 5px;
+    vertical-align: text-top;
+    background-color: transparent;
+    background-position : center center;
+    background-repeat:no-repeat;
+}
+
+.custom:before{
+
+     background-image : url('images/tamim.png');
+}
+
+.card-body h4{
+
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 100%;
+  border-radius: 10px;
+  transition:0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 0 20px 0 red;
+  transform: translateY(-20px);
+}
+
+/*--footer--*/
+
+footer {
+	background: #151515;
+}
+
+.footer-grid-w3ls h3 {
+	font-size: 1.4em;
+	color: #ffffff;
+	font-weight: 300;
+	margin-bottom: 1em;
+	letter-spacing: 1px;
+	border-bottom: 1px dotted #4d5052;
+	padding-bottom: 0.8em;
+}
+
+.footer-text p,
+.contact-info p {
+    color: #ffffff;
+	line-height: 1.9em;
+}
+
+.phone {
+	margin-top: 20px;
+}
+
+.contact-info h4 {
+	font-style: normal;
+	font-weight: 300;
+	font-size: 1.2em;
+	line-height: 1.9;
+	color: #ff4e00;
+}
+
+.copyright-w3layouts {
+	border-top: 1px solid #292828;
+	margin-top: 2em;
+	padding-top: 2em;
+}
+
+.copyright-w3layouts p {
+    color: #616263;
+}
+
+.copyright-w3layouts p a:hover {
+	color: #fff;
+}
+
+.footer p {
+	color: #3F4354;
+}
+
+.newsletter .email {
+	background-color: #F4F4F4;
+	border: none;
+}
+
+.footer-text input[type="email"] {
+	outline: none;
+	padding: 12px 15px;
+	color: #3F4354;
+	font-size: 20px;
+	width: 84%;
+	border: none;
+	background: none;
+	letter-spacing: 1px;
+	float: left;
+}
+
+.newsletter {
+	position: relative;
+	margin-top: 2em;
+}
+
+.footer-text button.btn1 {
+	color: #ff4e00;
+	border: none;
+	padding: 10px 0;
+	outline: none;
+	text-align: center;
+	text-decoration: none;
+	background: none;
+	cursor: pointer;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-o-transition: 0.5s all;
+	-ms-transition: 0.5s all;
+	transition: 0.5s all;
+	float: right;
+	width: 15%;
+}
+
+.footer-grid-w3ls form {
+	border: 1px solid #3e3c3c;
+	width: 100%;
+	margin-top: 20px;
+}
+
+ul.social_section_1info li {
+	display: inline-block;
+}
+
+ul.social_section_1info {
+	margin-top: 15px;
+}
+
+ul.social_section_1info a {
+	color: #808080;
+	margin-right: 10px;
+	font-size: 15px;
+}
+
+ul.social_section_1info a:hover {
+	color: #fff;
+}
+
+.phone p a {
+	color: #808080;
+}
+
+.phone p a:hover {
+	color: #fff;
+}
+
+ul.links li {
+	list-style-type: none;
+	margin: 10px 0;
+}
+
+ul.links li a {
+    color: #616263;
+}
+
+ul.links li a:hover {
+	color: #fff;
+}
+
+.copyright-w3layouts a i:hover {
+	color: #ffa200;
+	transition: all 0.7s ease-in-out;
+	-webkit-transition: all 0.7s ease-in-out;
+	-moz-transition: all 0.7s ease-in-out;
+	-o-transition: all 0.7s ease-in-out;
+	-ms-transition: all 0.7s ease-in-out;
+}
+.owl-item.active {
+    padding: 15px;
+    border: 1px solid #e4e4e4;
+}
+
+/*--social-icons--*/
+.footer-social li {
+    display: inline-block;
+}
+.footer-social li a {
+    color: #999;
+    font-size: 15px;
+}
+.footer-social li a:hover {
+    color: #ff4e00;
+}
+
+/*--//social-icons--*/
+
+.copyright-w3layouts a {
+    color: #ff4e00;
+}
